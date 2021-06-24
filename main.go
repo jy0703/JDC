@@ -415,7 +415,7 @@ func getAuth() {
 //获取cookie列表
 func getCookieList() []string {
 	//读取文件
-	f, err := os.OpenFile(path+"/db/cookie.db", os.O_RDONLY, 0766)
+	f, err := os.OpenFile(path+"/db/env.db", os.O_RDONLY, 0766)
 	if err != nil {
 		log.Println(err.Error())
 	}
@@ -429,7 +429,7 @@ func getCookieList() []string {
 //获取cookie列表
 func getCookieList2() []string {
 	//读取文件
-	f, err := os.OpenFile(path+"/config/cookie.sh", os.O_RDONLY, 0766)
+	f, err := os.OpenFile(path+"/config/env.sh", os.O_RDONLY, 0766)
 	if err != nil {
 		log.Println(err.Error())
 	}
